@@ -3,7 +3,7 @@ import { Component, OnChanges, Input, ViewChild } from '@angular/core';
 
 import { ImageService } from '../image/shared/image.service';
 import { Router } from '@angular/router';
-import {OwlCarousel} from 'ngx-owl-carousel';
+
 
 
 @Component({
@@ -12,44 +12,40 @@ import {OwlCarousel} from 'ngx-owl-carousel';
     styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnChanges {
+    height: String = '400px';
+    minHeight: String;
+    arrowSize: String = '30px';
+    showArrows: Boolean = true;
+    disableSwiping: Boolean = false;
+    autoPlay: Boolean = true;
+    autoPlayInterval: Number = 3333;
+    stopAutoPlayOnSlide: Boolean = true;
+    debug: Boolean = false;
+    backgroundSize: String = 'cover';
+    backgroundPosition: String = 'center center';
+    backgroundRepeat: String = 'no-repeat';
+    showDots: Boolean = true;
+    dotColor: String = '#FFF';
+    showCaptions: Boolean = true;
+    captionColor: String = '#FFF';
+    captionBackground: String = 'rgba(0, 0, 0, .35)';
+    lazyLoad: Boolean = false;
+    hideOnNoSlides: Boolean = false;
+    width: String = '100%';
+    @ViewChild('slideshow') slideshow: any;
 
-    imageObject: Array<object> = [{
-        image: 'assets/img/slider/1_min.jpeg',
-        thumbImage: 'assets/img/gol1.jpg'
-    }, {
-        image: 'assets/img/slider/2.jpg',
-        thumbImage: 'assets/img/gol2.jpg'
-    }, {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol3.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol4.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol5.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol6.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol7.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol8.jpg'
-    },
-    {
-        image: 'assets/img/slider/3.jpg',
-        thumbImage: 'assets/img/gol9.jpg'
-    },
-];
+    imageUrls: (string | IImage)[] = [
+        { url: 'assets/img/gol1.jpg', caption: 'The first slide', href: '#config' },
+        { url: 'assets/img/gol2.jpg', href: '#config' },
+        { url: 'assets/img/gol3.jpg', href: '#config' },
+        { url: 'assets/img/gol4.jpg', href: '#config' },
+        { url: 'assets/img/gol5.jpg', href: '#config' },
+        { url: 'assets/img/gol6.jpg', href: '#config' },
+        { url: 'assets/img/gol7.jpg', href: '#config' },
+        { url: 'assets/img/gol8.jpg', href: '#config' },
+        { url: 'assets/img/gol9.jpg', href: '#config' },
+    ];
 
-    @ViewChild('owlElement') owlElement: OwlCarousel;
 
     classes: string[] = [];
     show: Boolean = false;
@@ -64,6 +60,10 @@ export class GalleryComponent implements OnChanges {
     }
 
     ngOnChanges() {
+        setTimeout(() => {
+            console.log('adding an image url dynamically.');
+            this.imageUrls.push('https://cdn-images-1.medium.com/max/2000/1*Nccd2ofdArlXF7v58UK94Q.jpeg');
+        }, 2000);
         this.visibleImages = this.imageService.getImages();
     }
 
@@ -83,8 +83,4 @@ export class GalleryComponent implements OnChanges {
         }
     }
 
-    fun() {
-        this.owlElement.next([200]);
-        // duration 200ms
-      }
 }

@@ -25,6 +25,7 @@ import { ProductComponent } from './product/product.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
     imports: [
@@ -33,7 +34,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
         HttpClientModule,
         routing,
         OwlModule,
-        NgImageSliderModule
+        NgImageSliderModule,
+        SlideshowModule
     ],
     declarations: [
         AppComponent,
