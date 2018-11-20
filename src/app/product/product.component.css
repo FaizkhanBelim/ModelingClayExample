@@ -1,0 +1,173 @@
+/* .bdr1.ft {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.bdr1 {
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.r-e-h {
+    display: flex;
+}
+.f-div {
+    float: left;
+    width: 100%;
+}
+.l-cl {
+    float: left;
+    width: 70%;
+    padding: 15px 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.prd-img, .nsim {
+    position: relative;
+    border: 1px solid #f3f3f3;
+    cursor: pointer;
+    float: left;
+}
+.prd-img {
+    width: 200px;
+    height: 200px;
+}
+
+.prd-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.prd-img img {
+    max-width: 200px;
+    max-height: 200px;
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.rht {
+    width: 63%;
+}
+
+.rht {
+    float: left;
+    width: 64%;
+}
+.rht {
+    float: left;
+    width: 65%;
+    padding: 0 2.5%;
+} */
+
+
+.lst {
+  float: left;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.nlc {
+  background-color: #FFF;
+  border: 1px solid #aaa;
+}
+
+.bdr1.ft {
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.bdr1 {
+  border-radius: 20px;
+  margin-bottom: 0px !important;
+}
+
+.r-e-h {
+  display: flex;
+}
+
+.f-div {
+  float: left;
+  width: 100%;
+}
+
+.l-cl {
+  float: left !important;
+  padding: 15px 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.prd-img {
+  position: relative;
+  /* border: 1px solid #f3f3f3; */
+  cursor: pointer;
+  float: left;
+}
+
+.prd-img {
+  width: 200px;
+  height: 200px;
+}
+
+.nsim img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prd-img img {
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid #f3f3f3;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.rht {
+  float: left;
+  width: 65%;
+  padding: 0 2.5%;
+}
+
+h3.lg {
+  color: #2e368f;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.price {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 7px 0 10px 0;
+}
+
+.rht p b {
+  font-weight: normal;
+  color: #848484;
+}
+.desc {
+    color: #5a5a5b;
+    line-height: 18px;
+}
+
+p, .des_p p {
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
