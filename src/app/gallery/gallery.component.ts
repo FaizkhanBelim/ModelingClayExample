@@ -3,9 +3,6 @@ import { Component, OnChanges, Input, ViewChild } from '@angular/core';
 
 import { ImageService } from '../image/shared/image.service';
 import { Router } from '@angular/router';
-
-
-
 @Component({
     selector: 'app-gallery',
     templateUrl: './gallery.component.html',
@@ -44,8 +41,8 @@ export class GalleryComponent implements OnChanges {
         { url: 'assets/img/gol7.jpg', href: '#config' },
         { url: 'assets/img/gol8.jpg', href: '#config' },
         { url: 'assets/img/gol9.jpg', href: '#config' },
+        { url: 'assets/kitties.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
     ];
-
 
     classes: string[] = [];
     show: Boolean = false;
