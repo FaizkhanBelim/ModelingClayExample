@@ -3,6 +3,7 @@ import { Component, OnChanges, Input, ViewChild } from '@angular/core';
 
 import { ImageService } from '../image/shared/image.service';
 import { Router } from '@angular/router';
+import { IImage } from '../modules/slideshow/iimage.module';
 @Component({
     selector: 'app-gallery',
     templateUrl: './gallery.component.html',

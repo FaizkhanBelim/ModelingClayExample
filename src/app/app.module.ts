@@ -35,8 +35,7 @@ import {SlideshowModule} from 'ng-simple-slideshow';
         routing,
         OwlModule,
         NgImageSliderModule,
-        SlideshowModule
-    ],
+        SlideshowModule    ],
     declarations: [
         AppComponent,
         AlertComponent,
