@@ -79,5 +79,4 @@ export class GalleryComponent implements OnChanges {
             this.classes.push('not-active1');
         }
     }
-
 }
