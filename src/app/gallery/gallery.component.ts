@@ -80,6 +80,7 @@ export class GalleryComponent implements OnChanges {
         }
     }
 
+
     detailProduct() {
         console.log('NAVIGATE DETAIL PRODUCT');
         this.router.navigate(['/product']);
