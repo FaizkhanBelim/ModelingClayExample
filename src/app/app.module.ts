@@ -23,6 +23,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { SlideshowComponent } from './modules/slideshow/slideshow.component';
+import { ImageSearchPipe } from './image/shared/search.pipe';
 import { OwlModule } from 'ngx-owl-carousel';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {SlideshowModule} from 'ng-simple-slideshow';
@@ -48,7 +50,9 @@ import {SlideshowModule} from 'ng-simple-slideshow';
         ContactComponent,
         AboutComponent,
         ProductComponent,
-        PricingComponent
+        PricingComponent,
+        SlideshowComponent,
+        ImageSearchPipe
     ],
     providers: [
         AuthGuard,

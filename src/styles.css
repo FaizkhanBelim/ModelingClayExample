@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+/* shadow css */
+
+.shadow-1 {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .23);
+  }
+  
+  .shadow-2 {
+    box-shadow: 0 9px 23px rgba(0, 0, 0, .23);
+  }
+  
+  .shadow-3 {
+    box-shadow: 0 10px 23px rgba(0, 0, 0, .23);
+  }
+  
+  .shadow-4 {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .23);
+  }
+  
+  .shadow-5 {
+    box-shadow: 0 45px 60px rgba(0, 0, 0, .23);
+  }
+  
+  /* end shadow css */

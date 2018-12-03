@@ -1,0 +1,39 @@
+.locationbox {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0 10px 20px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-shadow: 0 0 29px 5px rgba(197,197,197,1);
+    -moz-box-shadow: 0 0 29px 5px rgba(197,197,197,1);
+    box-shadow: 0 0 29px 5px #c5c5c5;
+    min-width: 215px;
+    margin-top: 10px;
+}
+
+.detail-contain a>h4 {
+    color: #00aae7;
+    padding-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.detail-contain>a {
+    color: #434343;
+    text-decoration: none;
+}
+.tab-content {
+    text-align: center;
+}
+.detail-contain {
+    padding: 10px;
+    color: #434343;
+    font-size: 12px;
+    text-align: left;
+    min-height: 204px;
+}
+.location_section {
+    padding: 21px 0;
+    background-size: contain;
+}

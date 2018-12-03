@@ -1,0 +1,41 @@
+.white-bg {
+  padding: 20px 0;
+}
+
+.heading-blue {
+  font-size: 20px;
+  color: #00aae7;
+  text-align: center;
+}
+
+.headin-para-description {
+  text-align: left;
+  font-size: 15px;
+  color: #777;
+}
+
+.our-company-title {
+  height: 250px;
+  background-size: cover;
+}
+.heading-title-inner a {
+    font-size: 28px;
+    background: rgba(0,170,231,.8);
+    border: none;
+    color: #fff;
+    max-width: 545px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    line-height: 40px;
+}
+.heading-title-bg-main {
+    position: relative;
+    background-image: url('../../assets/img/ourcompany.jpg');
+    height: 250px;
+    background-size: cover;
+}
+
+.heading-title-inner {
+    line-height: 250px;
+}

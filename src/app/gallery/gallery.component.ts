@@ -33,7 +33,7 @@ export class GalleryComponent implements OnChanges {
     @ViewChild('slideshow') slideshow: any;
 
     imageUrls: (string | IImage)[] = [
-        { url: 'assets/img/gol1.jpg', caption: 'The first slide', href: '#config' },
+        { url: 'assets/img/gol13.jpg', caption: 'The first slide', href: '#config' },
         { url: 'assets/img/gol2.jpg', href: '#config' },
         { url: 'assets/img/gol3.jpg', href: '#config' },
         { url: 'assets/img/gol4.jpg', href: '#config' },
@@ -41,8 +41,7 @@ export class GalleryComponent implements OnChanges {
         { url: 'assets/img/gol6.jpg', href: '#config' },
         { url: 'assets/img/gol7.jpg', href: '#config' },
         { url: 'assets/img/gol8.jpg', href: '#config' },
-        { url: 'assets/img/gol9.jpg', href: '#config' },
-        { url: 'assets/kitties.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
+        { url: 'assets/img/gol12.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
     ];
 
     classes: string[] = [];
@@ -79,5 +78,10 @@ export class GalleryComponent implements OnChanges {
         } else {
             this.classes.push('not-active1');
         }
+    }
+
+    detailProduct() {
+        console.log('NAVIGATE DETAIL PRODUCT');
+        this.router.navigate(['/product']);
     }
 }

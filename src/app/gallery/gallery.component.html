@@ -1,41 +1,103 @@
-<div class="scrollmenu">
-  <div class="container">
-    <ul class="nav navbar-nav" routerLinkActive="active">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="product">Our Product</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="price">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="contact">Contact Us</a>
-      </li>
-    </ul>
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+        </button>
+        <a href="#" class="navbar-brand">Modeling Clay</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" routerLink="gallery">Home</a></li>
+          <li><a href="#" routerLink="product">Our Product</a></li>
+          <li><a href="#" routerLink="price">Pricing</a></li>
+          <li><a href="#" routerLink="about">About Us</a></li>
+          <li><a href="#" routerLink="contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<div class="new">
+  <div style="display:block;" [style.width]="width">
+    <slideshow #slideshow [imageUrls]="imageUrls" [height]="height" [minHeight]="minHeight" [arrowSize]="arrowSize"
+      [showArrows]="showArrows" [disableSwiping]="disableSwiping" [autoPlay]="autoPlay" [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
+      [debug]="debug" [backgroundSize]="backgroundSize" [backgroundPosition]="backgroundPosition" [backgroundRepeat]="backgroundRepeat"
+      [showDots]="showDots" [dotColor]="dotColor" [showCaptions]="showCaptions" [captionColor]="captionColor"
+      [captionBackground]="captionBackground" [lazyLoad]="lazyLoad" [hideOnNoSlides]="hideOnNoSlides">
+    </slideshow>
   </div>
 </div>
 
-<div style="margin-bottom:25px;margin-top: 10px;">
-  <div style="display:block;" [style.width]="width">
-    <slideshow #slideshow [imageUrls]="imageUrls"
-      [height]="height"
-      [minHeight]="minHeight" 
-      [arrowSize]="arrowSize"
-      [showArrows]="showArrows"
-      [disableSwiping]="disableSwiping"
-      [autoPlay]="autoPlay"
-      [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
-      [debug]="debug"
-      [backgroundSize]="backgroundSize"
-      [backgroundPosition]="backgroundPosition" 
-      [backgroundRepeat]="backgroundRepeat"
-      [showDots]="showDots" [dotColor]="dotColor" 
-      [showCaptions]="showCaptions" [captionColor]="captionColor"
-      [captionBackground]="captionBackground"
-      [lazyLoad]="lazyLoad"
-      [hideOnNoSlides]="hideOnNoSlides">
-    </slideshow>
-  </div>
+<div class="container">
+  <section class="product-section">
+    <div class="row pt-5 pb-5">
+      <div class="col-12">
+        <h3 class="heading-blue">Our Products</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="media">
+          <div class="media-left">
+            <a href="javascript:void(0);" class="homeCat" data-cat="granite" tabindex="0">
+              <img alt="Granite" class="img-fluid rounded shadow-3" src="assets/img/gol13.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="">
+          <h4 class="">Granite</h4>
+          <p class="media-small-descr">Granite product line by Cosmos includes more than 800 stones with numerous color
+              patterns. This prestigious building material.
+              <h1>Home Page - test</h1>
+              <h4>What is Lorem Ipsum?</h4>
+              <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              </p>
+          <div class="text-right">
+            <button class="btn btn-info text-capitalize" (click)="detailProduct()">more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5 pb-5">
+      <div class="col-md-6">
+        <div class="">
+          <h4 class="media-heading">Granite</h4>
+          <p class="media-small-descr">Granite product line by Cosmos includes more than 800 stones with numerous color
+            patterns. This prestigious building material.
+            <h1>Home Page - test</h1>
+            <h4>What is Lorem Ipsum?</h4>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+              of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+              search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+              evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <div class="text-right">
+              <button class="btn btn-info text-capitalize" (click)="detailProduct()">more</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="">
+          <div class="">
+            <a href="javascript:void(0);" class="homeCat" data-cat="granite" tabindex="0">
+              <img alt="Granite" class="img-fluid rounded shadow-3" src="assets/img/gol4.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
